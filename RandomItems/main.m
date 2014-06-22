@@ -33,9 +33,13 @@ int main(int argc, const char * argv[])
         }
         
         BNRItem *item = [[BNRItem alloc] init];
-        [item setItemName:@"Red Sofa"];
-        [item setSerialNumber:@"A1B2C"];
-        [item setValueInDollars:100];
+        item.itemName = @"Red Sofa";
+        item.serialNumber = @"A1B2C";
+        item.valueInDollars = 100;
+        
+//        [item setItemName:@"Red Sofa"];
+//        [item setSerialNumber:@"A1B2C"];
+//        [item setValueInDollars:100];
         
         NSLog(@"%@ %@ %@ %d", [item itemName], [item dateCreated], [item serialNumber], [item valueInDollars]);
         
