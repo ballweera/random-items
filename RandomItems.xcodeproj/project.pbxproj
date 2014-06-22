@@ -10,6 +10,7 @@
 		B31AF05119574107000249DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31AF05019574107000249DC /* Foundation.framework */; };
 		B31AF05419574107000249DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B31AF05319574107000249DC /* main.m */; };
 		B31AF05819574107000249DC /* RandomItems.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B31AF05719574107000249DC /* RandomItems.1 */; };
+		B31AF06019574329000249DC /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B31AF05F19574329000249DC /* BNRItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		B31AF05319574107000249DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B31AF05619574107000249DC /* RandomItems-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomItems-Prefix.pch"; sourceTree = "<group>"; };
 		B31AF05719574107000249DC /* RandomItems.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RandomItems.1; sourceTree = "<group>"; };
+		B31AF05E19574329000249DC /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		B31AF05F19574329000249DC /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,8 @@
 		B31AF04419574107000249DC = {
 			isa = PBXGroup;
 			children = (
+				B31AF05E19574329000249DC /* BNRItem.h */,
+				B31AF05F19574329000249DC /* BNRItem.m */,
 				B31AF05219574107000249DC /* RandomItems */,
 				B31AF04F19574107000249DC /* Frameworks */,
 				B31AF04E19574107000249DC /* Products */,
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B31AF05419574107000249DC /* main.m in Sources */,
+				B31AF06019574329000249DC /* BNRItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
