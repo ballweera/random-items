@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 BigNerdRanch. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
+@import Foundation;
 #import "BNRItem.h"
 
 int main(int argc, const char * argv[])
@@ -21,6 +22,9 @@ int main(int argc, const char * argv[])
             BNRItem *item = [BNRItem randomItem];
             [items addObject:item];
         }
+        
+        BNRItem *eleventItem = [[BNRItem alloc] initWithItemName:@"ABCDE" serialNumber:@"Q1W2E"];
+        [items addObject:eleventItem];
         
         // For every item in the items array ...
         for (NSString *item in items) {
