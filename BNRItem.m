@@ -92,6 +92,30 @@
     return [self initWithItemName:@"Item"];
 }
 
+- (void)setContainedItem:(BNRItem *)item
+{
+    _containedItem = item;
+    
+    // When given an item to contain, the contained
+    // item will be given a pointer to its container
+    item.container = self;
+}
+
+- (BNRItem *)containedItem
+{
+    return _containedItem;
+}
+
+- (void)setContainer:(BNRItem *)item
+{
+    _container = item;
+}
+
+- (BNRItem *)container
+{
+    return _container;
+}
+
 - (void)setItemName:(NSString *)str
 {
     _itemName = str;
@@ -129,6 +153,11 @@
     NSString *descriptionString = [[NSString alloc] initWithFormat:@"%@ (%@): Worth $%d, recorded on %@", self.itemName, self.serialNumber, self.valueInDollars, self.dateCreated];
     
     return descriptionString;
+}
+
+- (void)dealloc
+{
+    NSLog(@"Destroyed: %@", self);
 }
 
 @end
